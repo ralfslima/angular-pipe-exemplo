@@ -39,9 +39,9 @@
 <br>
 
 11º Agora vamos para o arquivo filtrar.pipe.ts, teremos a seguinte estrutura:
-transform(vetor: Foto[], titulo:string): Foto[] {
+<b>transform(vetor: Foto[], titulo:string): Foto[] {
     return vetor.filter(obj => {return obj.title.toLowerCase().indexOf(titulo.toLowerCase()) !== -1});
-}
+}</b>
 
 Basicamente ele pegar todo o vetor e retorna um novo vetor, onde o título possua o termo digitado, para isso utilizo a função nativa do JavaScript chamada filter.
 
