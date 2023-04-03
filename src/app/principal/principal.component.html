@@ -1,0 +1,21 @@
+<form>
+    <input type="text" placeholder="Termo do título" name="pesquisa" [(ngModel)]="titulo">
+</form>
+
+<hr>
+
+<table border="1">
+    <thead>
+        <tr>
+            <th>Código</th>
+            <th>Título</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let v of vetor | filtrar : titulo">
+            <td>{{v.id}}</td>
+            <td>{{v.title}}</td>
+        </tr>
+    </tbody>
+</table>
